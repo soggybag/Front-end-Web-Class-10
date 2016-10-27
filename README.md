@@ -38,12 +38,15 @@ Example -
 - css()
 - siblings()
     - [Example 1](jquery-examples/jquery-siblings.html)
+    - [Demo 1](http://webdevils.com/make-school/front-end-web-class-10/examples/jquery-siblings.html)
 - addClass()
 - removeClass()
 - eq()
     - [Example 2](jquery-examples/index-0.html)
+    - [Demo 2](http://webdevils.com/make-school/front-end-web-class-10/examples/index-0.html)
 - index()
     - [Example 3](jquery-examples/index-1.html)
+    - [Demo 2](http://webdevils.com/make-school/front-end-web-class-10/examples/index-1.html)
 
 ### 3 - Slide show example
 
