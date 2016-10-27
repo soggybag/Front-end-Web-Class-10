@@ -36,6 +36,7 @@ faster. Common tasks with jQuery:
 Example - 
 
 - css()
+- click()
 - siblings()
     - [Example 1](jquery-examples/jquery-siblings.html)
     - [Demo 1](http://webdevils.com/make-school/front-end-web-class-10/examples/jquery-siblings.html)
@@ -48,14 +49,14 @@ Example -
     - [Example 3](jquery-examples/index-1.html)
     - [Demo 2](http://webdevils.com/make-school/front-end-web-class-10/examples/index-1.html)
 
-### 3 - Slide show example
+### 3 - AJAX
 
-Example -
+Example - 
 
-- each(index, function)
-- position()
-- css()
-- click(function(){})
+- $.get()
+    - [Example 4](jquery-examples/index-2.html)
+    - [Demo 3](http://webdevils.com/make-school/front-end-web-class-10/examples/index-2.html)
+
 
 ### 4 - JSON Example 
 
