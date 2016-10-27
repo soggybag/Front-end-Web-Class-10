@@ -7,15 +7,12 @@ Objectives
 
 ## Schedule 
 
-|    | time   |    |      | Description                                |
-|----|--------|----|------|--------------------------------------------|
-|  1 |  5 min |  5 | TT   | jQuery quick review                   |
-|  2 |  5 min | 10 | TT   | Some useful jQuery methods |
-|  3 |  5 min | 15 | Work | Sketch Challenge                           |
-|  4 |  5 min | 20 | TT   | When should a layout change?               |
-|  5 |  5 min | 20 | TT   | Bootstrap Break Points                     |
-|  6 |  5 min | 25 | TT   | Testing                                    |
-|  7 | 30 min | 50 | Work | Challenges                                 |
+|    | time   |    |      | Description |
+|----|--------|----|------|--------------|
+|  1 |  5 min |  5 | TT   | jQuery quick review |
+|  2 |  5 min | 10 | Work | Menus and Slideshows |
+|  3 |  5 min | 15 | TT   | AJAX and JSON |
+|  4 |  5 min | 15 | Work | AJAX and JSON |
 
 
 
@@ -31,7 +28,7 @@ faster. Common tasks with jQuery:
     - This facilitates many other things
 - Load JSON from web services
 
-### 2 - Menu example 
+### 2 - Menus and Slideshows 
 
 Example - 
 
@@ -40,23 +37,38 @@ Example -
 - siblings()
     - [Example 1](jquery-examples/jquery-siblings.html)
     - [Demo 1](http://webdevils.com/make-school/front-end-web-class-10/examples/jquery-siblings.html)
+
+Challenges - 
+
+- Change the color
+
 - addClass()
 - removeClass()
 - eq()
     - [Example 2](jquery-examples/index-0.html)
     - [Demo 2](http://webdevils.com/make-school/front-end-web-class-10/examples/index-0.html)
+
+Challenges - 
+
+- Change the colors
+- Use text instead of boxes
+
 - index()
     - [Example 3](jquery-examples/index-1.html)
     - [Demo 2](http://webdevils.com/make-school/front-end-web-class-10/examples/index-1.html)
 
-### 3 - AJAX
+Challenges - 
+
+- Add text content to boxes
+- Change the background color of boxes
+
+### 3 - AJAX and JSON
 
 Example - 
 
 - $.get()
     - [Example 4](jquery-examples/index-2.html)
     - [Demo 3](http://webdevils.com/make-school/front-end-web-class-10/examples/index-2.html)
-
 
 ### 4 - JSON Example 
 
@@ -66,8 +78,12 @@ Example 2 -
 - $.post(path, {}, handler(data))
 - hmtl()
 
-### 5 - 
+Challenges - 
 
+- 
+
+
+### 5 - 
 
 
 
