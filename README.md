@@ -10,11 +10,13 @@ Objectives
 |    | time   |    |      | Description |
 |----|--------|----|------|--------------|
 |  1 |  5 min |  5 | TT   | jQuery quick review |
-|  2 |  5 min | 10 | Work | Menus and Slideshows |
-|  3 |  5 min | 15 | TT   | AJAX and JSON |
-|  4 |  5 min | 15 | Work | AJAX and JSON |
-
-
+|  2 |  5 min |  5 | TT   | Menus and Slideshows  |
+|  3 | 20 min | 35 | Work | Challenges |
+|  4 |  5 min | 40 | TT   | JSON API Example |
+|  5 | 10 min | 50 | Work | Challenges |
+|    | 10 min | 60 | Break|  |
+|  6 |  5 min | 65 | TT   | Intro challenges |
+|  7 | 40 min | 105| Work | Challenges |
 
 ### 1 - jQuery a quick review
 
@@ -38,7 +40,7 @@ Example -
     - [Example 1](jquery-examples/jquery-siblings.html)
     - [Demo 1](http://webdevils.com/make-school/front-end-web-class-10/examples/jquery-siblings.html)
 
-Challenges - 
+### 3 - Challenges 
 
 - Change the color
 
@@ -70,7 +72,7 @@ Example -
     - [Example 4](jquery-examples/index-2.html)
     - [Demo 3](http://webdevils.com/make-school/front-end-web-class-10/examples/index-2.html)
 
-### 4 - JSON Example 
+### 4 - JSON API Example 
 
 Example 2 - 
 
@@ -78,29 +80,18 @@ Example 2 -
 - $.post(path, {}, handler(data))
 - hmtl()
 
-Challenges - 
+### 5 - Challenges
 
-- 
-
-
-### 5 - 
-
-
+- Display the Artist
+- Display the price
+- Add some styles 
 
 ### 6 - Challenge
 
+Use the ideas from the previous examples to recreate the pages below.
+
 - [Challenge - 5](http://webdevils.com/make-school/front-end-web-class-10/challenges/index-5.html)
 - [Challenge - 6](http://webdevils.com/make-school/front-end-web-class-10/challenges/index-6.html)
-
-
-
-Select elements with jQuery
-
-jQuery each
-
-Set the content of an element with jQuery
-
-Load JSON data
 
 
 
