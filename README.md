@@ -33,19 +33,21 @@ faster. Common tasks with jQuery:
 
 ### 2 - Menu example 
 
-Example 0 - 
+Example - 
 
+- css()
 - siblings()
-    - [Example 1](jquery-siblings.html)
-    - [Example 2](index-0.html)
+    - [Example 1](jquery-examples/jquery-siblings.html)
 - addClass()
 - removeClass()
 - eq()
+    - [Example 2](jquery-examples/index-0.html)
 - index()
+    - [Example 3](jquery-examples/index-1.html)
 
 ### 3 - Slide show example
 
-Example 1 -
+Example -
 
 - each(index, function)
 - position()

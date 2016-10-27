@@ -74,7 +74,7 @@
             
             $(".box").each(function(i, el){
                 var hue = 360 / 6 * i;
-                console.log($(this));
+                // console.log($(this));
                 $(this).css({backgroundColor:"hsl("+hue+", 100%, 50%)"}); 
             });
             
@@ -83,10 +83,10 @@
             $(".nav>ul>li").click(function(event){
                 var index = $(this).index();
                 var y = 400 * index;
-                $(".content").css({top:"-"+y+"px"});
-                
-                $(".nav>ul>li").removeClass("selected");
-                $(this).addClass("selected");
+                $(".content").css({top:-y+"px"});
+                $(this).addClass("selected")
+                    .siblings()
+                    .removeClass("selected");
             });
             
         </script>
