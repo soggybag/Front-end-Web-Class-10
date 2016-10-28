@@ -4,9 +4,16 @@
         background-color: black;
         margin: 1px;
     }
+    
+    body {
+        background-color: hsl(35, 90%, 55%);
+    }
+
 </style>
 
 <div></div>
+
+<div style=""></div>
 <div></div>
 <div></div>
 <div></div>
@@ -27,7 +34,21 @@
         Provide each() with a function which will be run on each
         of the elements. 
     */
+    
+    // Add a click action to each div
     $("div").click(function(){
-        $(this).css({backgroundColor:"black"}).siblings().css({backgroundColor:"red"});
+        // Clicking this div
+        $(this)
+            .css({backgroundColor:"black"}) // Sets the background color to black
+            .siblings()                     // filter the selection to siblings
+            .css({backgroundColor:"red"});  // set the background color to red for all siblings
     });
 </script>
+
+
+
+
+
+
+
+

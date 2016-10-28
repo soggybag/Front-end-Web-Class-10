@@ -51,6 +51,8 @@
 
 
     <!-- Templates -->
+    
+    <!-- Movie template - displays a movie -->
     <script id="movie-template" type="text/x-handlebars-template">
         <div id="{{id}}" class="movie">
             <h1>{{im:name.label}}</h1>
@@ -60,6 +62,7 @@
         </div>
     </script>
     
+    <!-- link template - displays a link for a movie -->
     <script id="link-template" type="text/x-handlebars-template">
         <li class="movie-link">{{im:name.label}}</li>
     </script>
@@ -69,24 +72,38 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="handlebars-v4.0.5.js"></script>
     <script>
+        // Compile templates
         var movieTemplate = Handlebars.compile($("#movie-template").html());
         var linkTemplate = Handlebars.compile($("#link-template").html());
         
+        // Load JSON data from iTunes
         $.get("https://itunes.apple.com/us/rss/topmovies/limit=10/json", function (data) {
+            // Convert JSON to JS objects
             var json = JSON.parse(data);
             var entries = json.feed.entry;
 
+            // Make a couple variables to hold the movie and link markup
             var html = "";
             var links = "";
+            
+            // Loop through all entries
             for (i in entries) {
-                console.log(entries[i]);
+                // Uncomment this line to log the entry objects
+                // console.log(entries[i]);
+                // Pass the entry objects into the template functions
                 html += movieTemplate(entries[i]);
                 links += linkTemplate(entries[i]);
             }
+            
+            // Display the generated template text in the page
             $(".main").html(html);
             $(".links").html(links);
         });
         
+        // *** Important! ***
+        // .movie-link do not exist at the time this function is run. 
+        // Here you have added a function to body tag. Click events 
+        // that occur on the body are filtered for .movie-link. 
         $("body").on("click", ".movie-link", function(event){
             var index = $(this).index();
             var top = $(".movie").eq(index).position().top;

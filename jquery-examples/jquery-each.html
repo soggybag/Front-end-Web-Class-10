@@ -26,9 +26,11 @@
         of the elements. 
     */
     $("div").each(function(i){
-        console.log("???");
+        // divide the color wheel into 12 parts to set the hue. 
         var hue = 360 / 12 * i;
+        // make a style rule string with the hue. 
         var color = "hsl("+hue+", 100%, 50%)";
+        // Set the css of "this" div
         $(this).css({backgroundColor:color});
     });
 </script>

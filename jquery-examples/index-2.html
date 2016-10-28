@@ -16,6 +16,7 @@
 
 
     <!-- Templates -->
+    <!-- Use this to generate a template that displays a movie -->
     <script id="template" type="text/x-handlebars-template">
         <div id="{{id}}" class="product">
             <h1>{{im:name.label}}</h1>
@@ -30,16 +31,26 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="handlebars-v4.0.5.js"></script>
     <script>
+        // Compile the template into a template function
         var template = Handlebars.compile($("#template").html());
+        
+        // Load JSON data from iTunes. 
         $.get("https://itunes.apple.com/us/rss/topmovies/limit=10/json", function (data) {
+            // Convert JSON string into JS object
             var json = JSON.parse(data);
+            // Get the the array of entries 
             var entries = json.feed.entry;
             
+            // Define a string to hold the HTML that will show the movie list
             var html = "";
+            // Loop through all entries
             for (i in entries) {
+                // Logging the entries to the console will help understand it's structure.
                 console.log(entries[i]);
+                // Use the template function to generate a string from from the JS object
                 html += template(entries[i]);
             }
+            // Add the html string to the DOM and you see it on the screen. 
             $(".main").html(html);
         });
     </script>

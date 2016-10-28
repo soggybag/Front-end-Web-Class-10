@@ -72,18 +72,26 @@
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
             
+            // Here we set the color for each of the boxes
             $(".box").each(function(i, el){
+                // Calculate hue for box by dividing the color wheel
                 var hue = 360 / 6 * i;
                 // console.log($(this));
                 $(this).css({backgroundColor:"hsl("+hue+", 100%, 50%)"}); 
             });
             
+            // Set the top of the container to 0
             $(".content").css({top:0});
             
+            // Add a click function to each of the li tags
             $(".nav>ul>li").click(function(event){
+                // Get the index of li
                 var index = $(this).index();
+                // calculate the y position we want to move content to
                 var y = 400 * index;
+                // Set the top of the content
                 $(".content").css({top:-y+"px"});
+                // Add and remove the selected class
                 $(this).addClass("selected")
                     .siblings()
                     .removeClass("selected");

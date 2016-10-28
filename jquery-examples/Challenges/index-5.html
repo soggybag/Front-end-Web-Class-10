@@ -104,7 +104,9 @@
             var index = $(this).index();
             var top = $(".movie").eq(index).position().top;
             console.log(index, top);
+            // Set the top of .main to display the selected movie
             $(".main").css({top:-top+"px"});
+            // Highlight the selected button 
             $(this).addClass("selected").siblings().removeClass("selected");
         });
         
